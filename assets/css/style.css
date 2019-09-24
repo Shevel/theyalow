@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "LucidaSans";
+  font-style: italic;
+  src: url("../font/Lucida\ Sans\ Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SegoeWP";
+  font-style: regular;
+  src: url("../font/SegoeWP.ttf") format("truetype");
+}
+.margin {
+  margin: 0 10.77%;
+}
+.block_1 {
+  background-image: url(../img/block_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 588px;
+}
+.logoContainer {
+  position: relative;
+  display: inline-block;
+}
+header {
+  padding-top: 28px;
+  position: relative;
+}
+nav,
+nav * {
+  display: inline-block;
+}
+.headerNav {
+  position: relative;
+  left: 254px;
+  top: -13px;
+  z-index: 2;
+}
+.navShadow1 {
+  width: 453px;
+  height: 41px;
+  background-color: rgba(245,197,6,0.27);
+  position: relative;
+  top: -59px;
+  left: 565px;
+}
+.navShadow2 {
+  width: 453px;
+  height: 41px;
+  background-color: rgba(245,197,6,0.27);
+  position: absolute;
+  left: 561px;
+  top: 63px;
+}
+nav a {
+  background-color: #f5c506;
+  background-repeat: no-repeat;
+  font-size: 17px;
+  font-family: "SegoeWP";
+  color: rgb(155, 125, 8);
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: azure;
+}
+nav a:nth-child(1){  
+  background-image: url(../img/nav1.png);
+  background-position: 39px center;
+  background-size: 21px;
+  padding: 12px 24px 12px 69px;
+  border-right: 1px solid #dcb105;
+}
+nav a:nth-child(2){
+  background-image: url(../img/nav2.png);
+  background-position: 14px center;
+  background-size: 19px;
+  padding: 12px 19px 12px 43px;
+  border-right: 1px solid #dcb105;
+  letter-spacing: -0.2px;
+}
+nav a:nth-child(3){
+  background-image: url(../img/nav3.png);
+  background-position: 17px center;
+  background-size: 24px;
+  padding: 12px 22px 12px 49px;
+}
+.logo {
+  position: relative;
+  left: 2px;
+  display: inline-block;
+  width: 83px;
+  height: 83px;
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+h1.logoTheyalow {
+  font-family: "LucidaSans", Geneva, Verdana, sans-serif;
+  display: inline-block;
+  font-size: 41px;
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.3px;
+  position: relative;
+  top: -21px;
+  left: 2px;
+}

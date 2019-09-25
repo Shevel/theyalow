@@ -139,8 +139,8 @@ div.arrow.right {
   right: 0px;
 }
 .video {
-  width: 569px;
-  height: 341px;
+  /* width: 569px; */
+  width: 53.6544%;
   margin-left: 11px;
   margin-top: 55px;
 }
@@ -148,8 +148,8 @@ div.arrow.right {
   position: relative;
 }
 .yeallowLayer {
-  width: 569px;
-  height: 341px;
+  width: 53.6544%;
+  height: 85%;
   background-color: #f5c506;
   opacity: 0.22;
   margin-left: 11px;
@@ -158,13 +158,9 @@ div.arrow.right {
   top: 55px;
   left: 0px;
 }
-.theCool {
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 135px;
-  margin-left: 40px;
-}
-.theCool h1 {
+.theCool  {
+  float: right;
+  margin-top: 133px;
   font-size: 63.05px;
   font-family: 'Asap', Helvetica, sans-serif;
   text-transform: uppercase;
@@ -173,7 +169,64 @@ div.arrow.right {
 } 
 h1.yellow {
   color: #f5c506;
+  /* letter-spacing: 2.2px;
+  margin-left: -74px; */
 }
 h1.white {
   color: #ffffff;
+}
+.block2 {
+  height: 219px;
+  background-image: url("../img/layer1.jpg");
+  background-repeat: repeat;
+}
+.iconArea {
+  display: flex;
+  height: 100%;
+}
+.iconArea > div {
+  width: 33.33%;
+  height: 100%;
+  text-align: center;
+  border-left: 1px solid #d3d3d3;
+}
+.iconArea >div:nth-child(3){
+  border-right: 1px solid #d3d3d3;
+}
+div.designIcon {
+  background: url(../img/Shape\ 2.svg) no-repeat;
+  background-position: center;
+  height: 75px;
+  margin-top: 65px;
+}
+div.customiseIcon {
+  background: url(../img/Shape\ 3.svg) no-repeat;
+  background-position: center;
+  height: 96px;
+  margin-top: 39px;
+  margin-left: 7%;
+}
+div.itsFreeIcon {
+  background: url(../img/Shape\ 4.svg) no-repeat;
+  background-position: center;
+  height: 84px;
+  margin-top: 58px;
+  margin-left: -6%;
+}
+.iconArea p {
+  font-family: "SegoeWP", Helvetica, sans-serif;
+  font-size: 27px;
+  text-transform: uppercase;
+}
+.design p {
+  margin-top: 14px;
+  margin-left: 5%;
+}
+.customise p {
+  margin-top: 21px;
+  margin-left: 6%;
+}
+.itsFree p {
+  margin-top: 14px;
+  margin-left: -5%;
 }

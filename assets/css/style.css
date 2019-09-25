@@ -8,6 +8,11 @@
   font-style: regular;
   src: url("../font/SegoeWP.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Asap";
+  font-style: regular;
+  src: url("../font/Asap-Regular.ttf") format("truetype");
+}
 .margin {
   margin: 0 10.77%;
 }
@@ -18,98 +23,157 @@
   background-position: center;
   height: 588px;
 }
-.logoContainer {
-  position: relative;
-  display: inline-block;
+.clear_fix::after {
+  clear: both;
 }
 header {
   padding-top: 28px;
   position: relative;
 }
 nav,
-nav * {
+nav *,
+.logoContainer {
   display: inline-block;
 }
 .headerNav {
-  position: relative;
-  left: 254px;
-  top: -13px;
-  z-index: 2;
+  float: right;
+  margin-top: 46px;
 }
 .navShadow1 {
-  width: 453px;
-  height: 41px;
-  background-color: rgba(245,197,6,0.27);
-  position: relative;
-  top: -59px;
-  left: 565px;
+  width: 471px;
+  height: 43px;
+  background-color: #f5c50645;
+  position: absolute;
+  top: 68px;
+  right: 4px;
 }
 .navShadow2 {
-  width: 453px;
-  height: 41px;
-  background-color: rgba(245,197,6,0.27);
+  width: 471px;
+  height: 43px;
+  background-color: #f5c50645;
   position: absolute;
-  left: 561px;
-  top: 63px;
+  top: 64px;
+  right: 9px;
 }
-nav a {
+.headerNav li {
   background-color: #f5c506;
   background-repeat: no-repeat;
-  font-size: 17px;
-  font-family: "SegoeWP";
-  color: rgb(155, 125, 8);
+}
+.headerNav li a {
+  font-size: 19px;
+  font-family: "SegoeWP", Helvetica, sans-serif;
+  color: #9b7d08;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
 }
-nav a:hover {
+.headerNav li a:hover {
   text-decoration: underline;
   color: azure;
 }
-nav a:nth-child(1){  
+.headerNav ul li:nth-child(1){  
   background-image: url(../img/nav1.png);
-  background-position: 39px center;
-  background-size: 21px;
-  padding: 12px 24px 12px 69px;
+  background-position: 40px center;
+  background-size: 22px;
+  padding: 10px 22px 13px 71px;
+  letter-spacing: -0.5px;
   border-right: 1px solid #dcb105;
 }
-nav a:nth-child(2){
+.headerNav ul li:nth-child(2){ 
   background-image: url(../img/nav2.png);
-  background-position: 14px center;
-  background-size: 19px;
-  padding: 12px 19px 12px 43px;
+  background-position: 15px center;
+  background-size: 20px;
+  padding: 10px 19px 13px 43px;
   border-right: 1px solid #dcb105;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.5px;
 }
-nav a:nth-child(3){
+.headerNav ul li:nth-child(3){ 
   background-image: url(../img/nav3.png);
-  background-position: 17px center;
-  background-size: 24px;
-  padding: 12px 22px 12px 49px;
+  background-position: 18px center;
+  background-size: 25px;
+  padding: 10px 23px 13px 49px;
+  letter-spacing: -0.5px;
 }
 .logo {
-  position: relative;
-  left: 2px;
   display: inline-block;
-  width: 83px;
-  height: 83px;
+  width: 87px;
+  height: 87px;
   background-image: url(../img/logo.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 h1.logoTheyalow {
-  font-family: "LucidaSans", Geneva, Verdana, sans-serif;
+  font-family: "LucidaSans", Helvetica, sans-serif;
   display: inline-block;
   font-size: 41px;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   font-style: italic;
   text-transform: uppercase;
   text-decoration: none;
-  line-height: 1.2;
   text-align: center;
-  letter-spacing: 0.3px;
+  letter-spacing: 1.5px;
+  vertical-align: top;
+  margin-top: 29px;
+}
+.arrow {
+  height: 60px;
+  width: 33px;
+  background-color: #bca32a;
+  background-repeat: no-repeat;
+  background-position: 8px 19px;
+  background-size: 13px;
+  position: absolute;
+  top: 311px;
+}
+.arrow:hover{
+  cursor: pointer;
+  background-color: #f5c506;
+}
+div.arrow.left {
+  background-image: url(../img/leftArrow.png);
+  left: 0px;
+}
+div.arrow.right {
+  background-image: url(../img/rightArrow.png);
+  right: 0px;
+}
+.video {
+  width: 569px;
+  height: 341px;
+  margin-left: 11px;
+  margin-top: 55px;
+}
+.main {
   position: relative;
-  top: -21px;
-  left: 2px;
+}
+.yeallowLayer {
+  width: 569px;
+  height: 341px;
+  background-color: #f5c506;
+  opacity: 0.22;
+  margin-left: 11px;
+  display: inline-block;
+  position: absolute;
+  top: 55px;
+  left: 0px;
+}
+.theCool {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 135px;
+  margin-left: 40px;
+}
+.theCool h1 {
+  font-size: 63.05px;
+  font-family: 'Asap', Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.26;
+} 
+h1.yellow {
+  color: #f5c506;
+}
+h1.white {
+  color: #ffffff;
 }

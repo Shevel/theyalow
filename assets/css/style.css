@@ -29,9 +29,9 @@
   src: url("../font/PTS55F.ttf") format("truetype");
 }
 .margin {
-  margin: 0 10.77%;
+  margin: 0 auto;
 }
-.block_1 {
+.block1 {
   background-image: url(../img/block_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,6 +45,7 @@
   clear: both;
 }
 header {
+  width: 1020px;
   padding-top: 28px;
   position: relative;
 }
@@ -58,9 +59,8 @@ nav *,
   position: relative;
   margin-top: 44px;
   z-index: 3;
-  box-shadow: -4px -5px 0px 0px #f5c50645, -8px -8px 0px 0px #f5c50645;
-  -webkit-box-shadow: -4px -5px 0px 0px #f5c50645, -8px -8px 0px 0px #f5c50645;
-  -ms-box-shadow: -4px -5px 0px 0px #f5c50645, -8px -8px 0px 0px #f5c50645;
+  -webkit-box-shadow: -4px -5px 0px 0px rgba(245,197,6,0.27), -8px -8px 0px 0px rgba(245,197,6,0.27); 
+  box-shadow: -4px -5px 0px 0px rgba(245,197,6,0.27), -8px -8px 0px 0px rgba(245,197,6,0.27);
 }
 .headerNav li {
   background-color: #f5c506;
@@ -80,12 +80,6 @@ nav *,
   color: azure;
 }
 .headerNav ul li:nth-child(1){  
-  /* background-image: url(../img/nav1.png);
-  background-position: 39px center;
-  background-size: 21px;
-  padding: 11px 23px 11px 70px;
-  letter-spacing: 0.3px;
-  border-right: 1px solid #dcb105; */
   background-image: url(../img/nav1.png);
   background-position: 39px 10px;
   background-size: 21px;
@@ -94,12 +88,6 @@ nav *,
   border-right: 1px solid #dcb105;
 }
 .headerNav ul li:nth-child(2){ 
-  /* background-image: url(../img/nav2.png);
-  background-position: 13px center;
-  background-size: 20px;
-  padding: 11px 17px 11px 41px;
-  border-right: 1px solid #dcb105;
-  letter-spacing: 0.7px; */
   background-image: url(../img/nav2.png);
   background-position: 13px center;
   background-size: 20px;
@@ -108,11 +96,6 @@ nav *,
   letter-spacing: 0.2px;
 }
 .headerNav ul li:nth-child(3){ 
-  /* background-image: url(../img/nav3.png);
-  background-position: 17px 10px;
-  background-size: 24px;
-  padding: 11px 22px 11px 48px;
-  letter-spacing: 0.8px; */
   background-image: url(../img/nav3.png);
   background-position: 17px 10px;
   background-size: 24px;
@@ -174,6 +157,7 @@ div.arrow.right {
 }
 .main {
   position: relative;
+  width: 1020px;
 }
 .yeallowLayer {
   width: 53.6544%;
@@ -202,7 +186,7 @@ p.yellow {
 p.white {
   color: #ffffff;
   letter-spacing: 0.7px;
-  margin-right: 18px;
+  margin-right: 17px;
 }
 .block2 {
   height: 212px;
@@ -210,6 +194,7 @@ p.white {
   background-repeat: repeat;
 }
 .iconArea {
+  width: 1020px;
   display: flex;
   height: 100%;
 }
@@ -250,16 +235,18 @@ div.itsFreeIcon {
 }
 .design p {
   margin-top: 14px;
-  margin-left: 5%;
+  margin-left: 18px;
+  letter-spacing: -0.3px;
 }
 .customise p {
   margin-top: 18px;
-  margin-left: 6%;
-  /* letter-spacing: -0.8px; */
+  margin-left: 21px;
+  letter-spacing: -0.7px;
 }
 .itsFree p {
   margin-top: 12px;
-  margin-left: -5%;
+  margin-left: -16px;
+  letter-spacing: -0.5px;
 }
 .block3 {
   height: 508px;
@@ -276,6 +263,9 @@ div.itsFreeIcon {
   height: 233px;
   display: flex;
 }
+.loremSection {
+  width: 1020px;
+} 
 h2.loremIpsum {
   color: #fff;
   font-family: "PT Sans", Helvetica, sans-serif;
@@ -283,7 +273,7 @@ h2.loremIpsum {
   padding-top: 37px;
   padding-bottom: 36px;
   text-transform: uppercase;
-  letter-spacing: 0.36px;
+  letter-spacing: 0.4px;
 }
 p.blockthree {
   color: #fff;
@@ -293,7 +283,7 @@ p.blockthree {
   line-height: 1.32;
   text-align: left;
   margin-top: 16px;
-  margin-left: 29px;
+  margin-left: 30px;
   letter-spacing: 0.3px;
 }
 .loremLayer {
@@ -351,7 +341,7 @@ p.notific {
   font-size: 25px;
   position: absolute;
   top: 15px;
-  right: 20px;
+  right: 19px;
 }
 div.twitter {
   background: url(../img/twitter.svg) no-repeat;
@@ -481,9 +471,15 @@ input[type=range].custom:focus::-ms-fill-upper {
   -webkit-box-shadow: inset 0px -20px 5px -18px #000000; 
   box-shadow: inset 0px -20px 5px -18px #000000;
 }
+.grayLayer {
+  width: 1020px;
+}
 .block5 {
   height: 64px;
   background-color: #4C4C4C;
+}
+.footer {
+  width: 1020px;
 }
 .logo.footer {
   width: 52px;
@@ -554,7 +550,7 @@ h2.loremIpsum.yellow {
 .devices-container {
   display: flex;
   margin-top: 16px;
-  margin-left: 19px;
+  margin-left: 18px;
   align-items: center;
 }
 .sale p {
@@ -564,7 +560,7 @@ h2.loremIpsum.yellow {
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 52px;
-  margin-left: 5px;
+  margin-left: 7px;
   letter-spacing: -0.7px;
 }
 .undeOmnis li{
@@ -589,8 +585,8 @@ h2.loremIpsum.yellow {
 }
 div.unordered-list {
   display: inline-block;
-  width: 37.3%;
-  padding-left: 79px;
+  width: 37%;
+  padding-left: 76px;
 }
 .undeOmnis li:nth-child(2) {
   margin-bottom: 14px;

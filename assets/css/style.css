@@ -31,12 +31,16 @@
 .margin {
   margin: 0 auto;
 }
+div.body-container {
+  width: 1300px;
+}
 .block1 {
   background-image: url(../img/block_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 566px;
+  position: relative;
   -webkit-box-shadow: inset 0px -8px 10px -8px #000000; 
   -ms-box-shadow: inset 0px -8px 10px -8px #000000; 
   box-shadow: inset 0px -8px 10px -8px #000000;

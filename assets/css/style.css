@@ -598,7 +598,7 @@ h2.loremIpsum.yellow {
 .undeOmnis li{
   display: inline-block;
   font-size: 22px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", Hekvetica, sans-serif;
   color: #a9a9a7;
   line-height: 1.2;
   position: relative;
@@ -651,7 +651,7 @@ ul.undeOmnis {
   background-position: center;
   background-size: 285px 43px;
 }
-.twitter-message-area:nth-child(1) {
+.twitter-message-area::nth-child(1) {
   margin-top: 23px;
 }
 .twitter-message-area .message {
@@ -660,6 +660,7 @@ ul.undeOmnis {
 }
 .twitter-message-area .author {
   padding-left: 28px;
+  padding-top: 3px;
 }
 .twitter-message-area:nth-child(2),
 .twitter-message-area:nth-child(3) {

@@ -1,38 +1,38 @@
 @font-face {
   font-family: "LucidaSans";
   font-style: italic;
-  src: url("../font/Lucida\ Sans\ Italic.ttf") format("truetype");
+  src: url("./assets/font/Lucida\ Sans\ Italic.ttf") format("truetype");
 }
 @font-face {
   font-family: "SegoeWP";
   font-weight: normal;
-  src: url("../font/SegoeWP.ttf") format("truetype");
+  src: url("./assets/font/SegoeWP.ttf") format("truetype");
 }
 @font-face {
   font-family: "Segoe UI";
   font-weight: 700;
-  src: url("../font/Segoe\ UI\(Bold\).ttf") format("truetype");
+  src: url("./assets/font/Segoe\ UI\(Bold\).ttf") format("truetype");
 }
 @font-face {
   font-family: "SegoeWP";
   font-weight: 300;
-  src: url("../font/segoe-wp-light.ttf") format("truetype");
+  src: url("./assets/font/segoe-wp-light.ttf") format("truetype");
 }
 @font-face {
   font-family: "Asap";
   font-weight: 400;
-  src: url("../font/Asap-Regular.ttf") format("truetype");
+  src: url("./assets/font/Asap-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "PT Sans";
   font-weight: 400;
-  src: url("../font/PTS55F.ttf") format("truetype");
+  src: url("./assets/font/PTS55F.ttf") format("truetype");
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: url("../font/OpenSans-Regular.ttf") format("truetype");
+  src: url("./assets/font/OpenSans-Regular.ttf") format("truetype");
 }
 .margin {
   margin: 0 auto;
@@ -41,7 +41,7 @@ div.body-container {
   width: 1300px;
 }
 .block1 {
-  background-image: url(../img/block_1.jpg);
+  background-image: url(./assets/img/block_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -90,7 +90,7 @@ nav *,
   color: azure;
 }
 .headerNav ul li:nth-child(1){  
-  background-image: url(../img/nav1.png);
+  background-image: url(./assets/img/nav1.png);
   background-position: 39px 10px;
   background-size: 21px;
   padding: 11px 20px 11px 70px;
@@ -98,7 +98,7 @@ nav *,
   border-right: 1px solid #dcb105;
 }
 .headerNav ul li:nth-child(2){ 
-  background-image: url(../img/nav2.png);
+  background-image: url(./assets/img/nav2.png);
   background-position: 13px center;
   background-size: 20px;
   padding: 11px 18px 11px 41px;
@@ -106,7 +106,7 @@ nav *,
   letter-spacing: 0.2px;
 }
 .headerNav ul li:nth-child(3){ 
-  background-image: url(../img/nav3.png);
+  background-image: url(./assets/img/nav3.png);
   background-position: 17px 10px;
   background-size: 24px;
   padding: 11px 21px 11px 48px;
@@ -114,7 +114,7 @@ nav *,
 }
 .logo {
   display: inline-block;
-  background-image: url(../img/logo.png);
+  background-image: url(./assets/img/logo.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -152,11 +152,11 @@ h1.logoTheyalow {
   background-color: #f5c506;
 }
 div.arrow.left {
-  background-image: url(../img/leftArrow.png);
+  background-image: url(./assets/img/leftArrow.png);
   left: 0px;
 }
 div.arrow.right {
-  background-image: url(../img/rightArrow.png);
+  background-image: url(./assets/img/rightArrow.png);
   right: 0px;
 }
 .video {
@@ -200,7 +200,7 @@ p.white {
 }
 .block2 {
   height: 212px;
-  background-image: url("../img/layer1.jpg");
+  background-image: url("./assets/img/layer1.jpg");
   background-repeat: repeat;
 }
 .iconArea {
@@ -218,21 +218,21 @@ p.white {
   border-right: 1px solid #d3d3d3;
 }
 div.designIcon {
-  background: url(../img/Shape\ 2.svg) no-repeat;
+  background: url(./assets/img/Shape\ 2.svg) no-repeat;
   background-position: center;
   height: 74px;
   margin-top: 61px;
   margin-right: 5px;
 }
 div.customiseIcon {
-  background: url(../img/Shape\ 3.svg) no-repeat;
+  background: url(./assets/img/Shape\ 3.svg) no-repeat;
   background-position: center;
   height: 95px;
   margin-top: 37px;
   margin-left: 7%;
 }
 div.itsFreeIcon {
-  background: url(../img/Shape\ 4.svg) no-repeat;
+  background: url(./assets/img/Shape\ 4.svg) no-repeat;
   background-position: center;
   height: 83px;
   margin-top: 55px;
@@ -272,7 +272,7 @@ div.itsFreeIcon {
   -webkit-box-shadow: inset 0px 7px 10px -10px #000000;
   -ms-box-shadow: inset 0px 7px 10px -10px #000000; 
   box-shadow: inset 0px 7px 10px -10px #000000;
-  background-image: url(../img/bgblock3.jpg);
+  background-image: url(./assets/img/bgblock3.jpg);
   background-repeat: repeat;
   background-size: 53px 42px;
 }
@@ -329,7 +329,7 @@ p.blockthree2 {
   width: 61px;
   height: 61px;
   background-color: rgba(245, 197, 6, 0.72);
-  background-image: url(../img/indicator.png);
+  background-image: url(./assets/img/indicator.png);
   background-repeat: no-repeat;
   background-position: 25px;
   background-size: 17px;
@@ -340,7 +340,7 @@ p.blockthree2 {
   border: 1px solid #fff;
 }
 div.plus {
-  background: url(../img/plus.svg) no-repeat;
+  background: url(./assets/img/plus.svg) no-repeat;
   background-position: center;
   height: 12px;
   width: 12px;
@@ -376,7 +376,7 @@ p.notific {
   right: 19px;
 }
 div.twitter {
-  background: url(../img/twitter.svg) no-repeat;
+  background: url(./assets/img/twitter.svg) no-repeat;
   background-position: center;
   height: 134px;
   width: 164px;
@@ -497,7 +497,7 @@ input[type=range].custom:focus::-ms-fill-upper {
 }
 .block4 {
   height: 499px;
-  background-image: url(../img/grayLayer.png);
+  background-image: url(./assets/img/grayLayer.png);
   background-repeat: repeat;
   background-size: 80px 80px;
   -webkit-box-shadow: inset 0px -20px 5px -18px #000000; 
@@ -554,7 +554,7 @@ h2.loremIpsum.yellow {
   position: relative;
   width: 323px;
   height: 255px;
-  background-image: url(../img/computer.png);
+  background-image: url(./assets/img/computer.png);
 }
 .devices-container div.sale{
   width: 116px;
@@ -568,14 +568,14 @@ h2.loremIpsum.yellow {
 .devices-container div.tablet {
   width: 129px;
   height: 173px;
-  background-image: url(../img/tablet.png);
+  background-image: url(./assets/img/tablet.png);
   margin-left: 24px;
   margin-top: 1px;
 }
 .devices-container div.mobile {
   width: 39px;
   height: 63px;
-  background-image: url(../img/mobile.png);
+  background-image: url(./assets/img/mobile.png);
   margin-left: 25px;
   margin-top: 111px;
 }
@@ -647,7 +647,7 @@ ul.undeOmnis {
   letter-spacing: 0.2px;
   margin-bottom: 13px;
   margin-left: 6px;
-  background-image: url(../img/vectorpaint.svg);
+  background-image: url(./assets/img/vectorpaint.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 285px 43px;
@@ -665,7 +665,7 @@ ul.undeOmnis {
 }
 .twitter-message-area:nth-child(2),
 .twitter-message-area:nth-child(3) {
-  background-image:url(../img/vectorpaint_gray.svg);
+  background-image:url(./assets/img/vectorpaint_gray.svg);
 }
 .twitter-message-input {
   display: none;
@@ -733,7 +733,7 @@ ul.undeOmnis {
     width: 186px;
     display: flex;
     height: 62px;
-    background-image: url(../img/mobileLogoBG.png);
+    background-image: url(./assets/img/mobileLogoBG.png);
   }
   div.logo.header {
     width: 40px;
@@ -965,12 +965,12 @@ ul.undeOmnis {
   }
   .first.cover-layer  {
     display: block;
-    background-image: url(../img/3sec_0.png);
+    background-image: url(./assets/img/3sec_0.png);
     top: -175px;
   }
   .second.cover-layer {
     display: block;
-    background-image: url(../img/3sec_1.png);
+    background-image: url(./assets/img/3sec_1.png);
     top: -354px;
   }
   .video {

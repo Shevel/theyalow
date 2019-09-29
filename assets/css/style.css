@@ -28,6 +28,12 @@
   font-weight: 400;
   src: url("../font/PTS55F.ttf") format("truetype");
 }
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/OpenSans-Regular.ttf") format("truetype");
+}
 .margin {
   margin: 0 auto;
 }
@@ -252,6 +258,15 @@ div.itsFreeIcon {
   margin-left: -16px;
   letter-spacing: -0.5px;
 }
+.cover-layer {
+  display: none;
+  width: 640px;
+  height: 174px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .block3 {
   height: 508px;
   -webkit-box-shadow: inset 0px 7px 10px -10px #000000;
@@ -279,7 +294,7 @@ h2.loremIpsum {
   text-transform: uppercase;
   letter-spacing: 0.4px;
 }
-p.blockthree {
+p.blockthree1 {
   color: #fff;
   font-family: "SegoeWP", Helvetica, sans-serif;
   font-weight: lighter;
@@ -288,6 +303,19 @@ p.blockthree {
   text-align: left;
   margin-top: 16px;
   margin-left: 30px;
+  letter-spacing: 0.3px;
+}
+p.blockthree2 {
+  display: none;
+  width: 240px;
+  color: #fff;
+  font-family: "SegoeWP", Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 29px;
+  line-height: 1.2;
+  text-align: left;
+  margin-top: 13px;
+  margin-left: 27px;
   letter-spacing: 0.3px;
 }
 .loremLayer {
@@ -605,4 +633,295 @@ div.unordered-list {
 ul.undeOmnis {
   position: relative;
   top: 10px;
+}
+.video-mobile {
+  display: none;
+}
+.twitter-message-area {
+  display: none;
+  width: 285px;
+  height: 43px;
+  margin-bottom: 13px;
+  margin-left: 6px;
+  background-image: url(../img/vectorpaint.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 285px 43px;
+}
+.twitter-message-area:nth-child(1) {
+  margin-top: 23px;
+}
+.twitter-message-area .message,
+.twitter-message-area .author {
+  font-size: 13px;
+  font-family: "Arial";
+  color: rgb(143, 142, 142);
+  line-height: 1.2;
+  margin-left: 28px;
+  letter-spacing: 0.2px;
+}
+.twitter-message-area .message {
+  padding-top: 8px;
+}
+.twitter-message-area:nth-child(2),
+.twitter-message-area:nth-child(3) {
+  background-image:url(../img/vectorpaint_gray.svg);
+}
+
+@media screen and (max-width: 640px) {
+  div.body-container {
+    width: 640px;
+  }
+  .block1 {
+    height: 390px;
+  }
+  header {
+    width: 640px;
+    height: 62px;
+    padding-top: 0;
+    margin: 0;
+    display: flex;
+  }
+  .logoContainer {
+    width: 186px;
+    display: flex;
+    height: 62px;
+    background-image: url(../img/mobileLogoBG.png);
+  }
+  div.logo.header {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 12px;
+  }
+  h1.logoTheyalow {
+    font-size: 19.29px;
+    margin-top: 24px;
+    margin-left: 5px;
+    letter-spacing: 0.5px;
+  }
+  .headerNav {
+    margin-top: 0;
+    box-shadow: none;
+  }
+  .headerNav ul li:nth-child(1) {
+    background-position: 24px 21px;
+    background-size: 23px;
+    padding: 23px 21px 20px 58px;
+    letter-spacing: 1px;
+  }
+  .headerNav ul li:nth-child(2) {
+    background-position: 9px center;
+    background-size: 21px;
+    padding: 23px 13px 20px 37px;
+    letter-spacing: 0.8px;
+  }
+  .headerNav ul li:nth-child(3) {
+    background-position: 12px 20px;
+    background-size: 28px;
+    padding: 23px 11px 20px 52px;
+    letter-spacing: 0.8px;
+  }
+  .headerNav li a {
+    font-size: 18px;
+  }
+  .arrow {
+    display: none;
+  }
+  .main,
+  .video {
+    width: 640px;
+    height: 327px;
+    margin: 0;
+  }
+  .yeallowLayer {
+    width: 640px;
+    height: 327px;
+    background-color: rgba(245, 197, 6, 0.11);
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    margin-left: 0;
+  }
+  .theCool {
+    display: none;
+  }
+  .block2 {
+    height: 170px;
+  }
+  .iconArea,
+  .grayLayer {
+    width: 640px;
+    margin: 0;
+  }
+  .iconArea {
+    position: relative;
+    z-index: 3;
+  }
+  .iconArea > div {
+    border: 0;
+  }
+  div.designIcon {
+    background-position: 45px;
+    background-size: 90px 62px;
+    height: 62px;
+    margin-top: 31px;
+  }
+  div.customiseIcon {
+    background-size: 68px 70px;
+    margin-top: 15px;
+    margin-left: 16px;
+  }
+  div.itsFreeIcon {
+    background-position: 83px;
+    background-size: 69px 70px;
+    margin-top: 21px;
+  }
+  .iconArea p {
+    font-size: 23px;
+  }
+  .design p {
+    margin-top: 21px;
+    margin-right: 23px;
+    margin-left: 0;
+    letter-spacing: 0;
+  }
+  .customise p {
+    margin-top: 4px;
+    margin-left: 19px;
+  }
+  .itsFree p {
+    margin-top: 10px;
+    margin-left: 5px;
+    letter-spacing: -0.4px;
+  }
+  .loremSection {
+    width: 640px;
+  }
+  .block3 {
+    height: 485px;
+    background-color: #fff;
+    background-image: none;
+    box-shadow: none;
+  }
+  h2.loremIpsum,
+  .calendar,
+  input.custom {
+    display:none;
+  }
+  .loremLayer {
+    width: 299px;
+    height: 232px;
+    margin: 10px 8px 9px 9px;
+  }
+  .loremVideo {
+    margin: 9px 8px 9px 1px;
+  }
+  p.blockthree1 {
+    display: none;
+  }
+  p.blockthree2 {
+    display: block;
+  }
+  .textAndVideoLayer {
+    width: 640px;
+    height: 251px;
+  }
+  .textAndVideoLayer div.plus {
+    bottom: 17px;
+    right: 11px;
+  }
+  .playbutton {
+    top: 102px;
+    left: 447px;
+  }
+  div.unordered-list {
+    display: none;
+  }
+  .wrap {
+    display: inline-block;
+    height: 485px;
+  }
+  .twitterLayer div.plus,
+  p.notific {
+    display: none;
+  }
+  .twitterLayer {
+    display: flex;
+    background-color: #F5C507;
+    width: 640px;
+    height: 234px;
+    box-sizing: border-box;
+  }
+  div.twitter {
+    background-position: 85px 59px;
+    background-size: 160px 133px;
+    height: 118px;
+    padding-top: 130px;
+    width: 317px;
+    margin: 0;
+  }
+  .twitter-message {
+    width: 323px;
+    height: 233px;
+  }
+  .block4 {
+    height: 465px;
+  }
+  h2.loremIpsum.yellow {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    display: block;
+    padding-top: 36px;
+    padding-left: 17px;
+    font-size: 39px;
+    padding-bottom: 0;
+}
+  .devices-container {
+    margin-top: 80px;
+    margin-left: 57px;
+  }
+  .devices-container div.sale {
+    top: -41px;
+    left: -30px;
+  }
+  .block5 {
+    height: 43px;
+  }
+  .footer {
+    width: 640px;
+  }
+  .logo.footer {
+    width: 30px;
+    height: 30px;
+  }
+  div.logo.footer {
+    margin-top: 6px;
+    margin-left: 65.5px;
+  }
+  p.theyalowFooter {
+    font-size: 17px;
+    margin-top: 7px;
+    margin-left: 8px;
+    letter-spacing: 0.1px;
+  }
+  .first.cover-layer  {
+    display: block;
+    background-image: url(../img/3sec_0.png);
+    top: -175px;
+  }
+  .second.cover-layer {
+    display: block;
+    background-image: url(../img/3sec_1.png);
+    top: -354px;
+  }
+  .video {
+    display: none;
+  }
+  .video-mobile {
+    display: block;
+  }
+  .twitter-message-area {
+    display: block;
+    text-align: left;
 }

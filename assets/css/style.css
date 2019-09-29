@@ -642,7 +642,8 @@ ul.undeOmnis {
   width: 285px;
   height: 43px;
   font-size: 13px;
-  font-family: "Arial", Helvetica, sans-serif;
+  color: rgb(143, 142, 142);
+  font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.2px;
   margin-bottom: 13px;
   margin-left: 6px;
@@ -651,7 +652,7 @@ ul.undeOmnis {
   background-position: center;
   background-size: 285px 43px;
 }
-.twitter-message-area::nth-child(1) {
+.twitter-message-area:nth-child(1) {
   margin-top: 23px;
 }
 .twitter-message-area .message {
@@ -716,6 +717,7 @@ ul.undeOmnis {
 @media screen and (max-width: 640px) {
   div.body-container {
     width: 640px;
+    margin: 0;
   }
   .block1 {
     height: 390px;
@@ -746,26 +748,37 @@ ul.undeOmnis {
     letter-spacing: 0.5px;
   }
   .headerNav {
-    margin-top: 0;
+    margin: 0;
     box-shadow: none;
+    width: 454px;
+    box-sizing: border-box;
   }
   .headerNav ul li:nth-child(1) {
     background-position: 24px 21px;
     background-size: 23px;
     padding: 23px 21px 20px 58px;
     letter-spacing: 1px;
+    width: 172px;
+    height: 62px;
+    box-sizing: border-box;
   }
   .headerNav ul li:nth-child(2) {
     background-position: 9px center;
     background-size: 21px;
     padding: 23px 13px 20px 37px;
     letter-spacing: 0.8px;
+    width: 132px;
+    height: 62px;
+    box-sizing: border-box;
   }
   .headerNav ul li:nth-child(3) {
     background-position: 12px 20px;
     background-size: 28px;
     padding: 23px 11px 20px 52px;
     letter-spacing: 0.8px;
+    width: 149px;
+    height: 62px;
+    box-sizing: border-box;
   }
   .headerNav li a {
     font-size: 18px;

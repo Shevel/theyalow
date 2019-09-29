@@ -641,6 +641,9 @@ ul.undeOmnis {
   display: none;
   width: 285px;
   height: 43px;
+  font-size: 13px;
+  font-family: "Arial", Helvetica, sans-serif;
+  letter-spacing: 0.2px;
   margin-bottom: 13px;
   margin-left: 6px;
   background-image: url(../img/vectorpaint.svg);
@@ -651,23 +654,64 @@ ul.undeOmnis {
 .twitter-message-area:nth-child(1) {
   margin-top: 23px;
 }
-.twitter-message-area .message,
-.twitter-message-area .author {
-  font-size: 13px;
-  font-family: "Arial";
-  color: rgb(143, 142, 142);
-  line-height: 1.2;
-  margin-left: 28px;
-  letter-spacing: 0.2px;
-}
 .twitter-message-area .message {
   padding-top: 8px;
+  padding-left: 28px;
+}
+.twitter-message-area .author {
+  padding-left: 28px;
 }
 .twitter-message-area:nth-child(2),
 .twitter-message-area:nth-child(3) {
   background-image:url(../img/vectorpaint_gray.svg);
 }
-
+.twitter-message-input {
+  display: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 271px;
+  height: 27px;
+  border: 1px solid #d0a806;
+  margin-left: 20px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  font: normal 16px/normal "Arial", Helvetica, sans-serif;
+  color: rgba(0,142,198,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(252,252,252,1);
+  -webkit-box-shadow: 0 5px 5px 0 rgba(0,0,0,0.11) inset;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.11) inset;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+}
+.message-submit-button {
+  display: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 71px;
+  height: 29px;
+  cursor: pointer;
+  padding: 0 5px 0 0;
+  border: none;
+  -webkit-border-radius: 0 9px 9px 0;
+  border-radius: 0 9px 9px 0;
+  font: normal 15px/normal Arial, Helvetica, sans-serif;
+  color: rgba(255,255,255,0.9);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: -webkit-linear-gradient(-90deg, #eaa927 0, #d08f0c 100%);
+  background: -moz-linear-gradient(180deg, #eaa927 0, #d08f0c 100%);
+  background: linear-gradient(180deg, #eaa927 0, #d08f0c 100%);
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+}
 @media screen and (max-width: 640px) {
   div.body-container {
     width: 640px;
@@ -876,7 +920,7 @@ ul.undeOmnis {
     padding-left: 17px;
     font-size: 39px;
     padding-bottom: 0;
-}
+  }
   .devices-container {
     margin-top: 80px;
     margin-left: 57px;
@@ -924,4 +968,14 @@ ul.undeOmnis {
   .twitter-message-area {
     display: block;
     text-align: left;
+  }
+  .twitter-message-input {
+    display: inline-block;
+  }
+  .message-submit-button {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    left: 221px;
+  }
 }

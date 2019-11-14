@@ -34,13 +34,13 @@
   font-weight: 400;
   src: url("./assets/font/OpenSans-Regular.ttf") format("truetype");
 }
-.margin {
+.centering {
   margin: 0 auto;
 }
-div.body-container {
+.body-container {
   width: 1300px;
 }
-.block1 {
+.block-theyalow {
   background-image: url(./assets/img/block_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -51,20 +51,20 @@ div.body-container {
   -ms-box-shadow: inset 0px -8px 10px -8px #000000; 
   box-shadow: inset 0px -8px 10px -8px #000000;
 }
-.clear_fix::after {
+.clear-fix::after {
   clear: both;
 }
-header {
+.header {
   width: 1020px;
   padding-top: 28px;
   position: relative;
 }
-nav,
-nav *,
-.logoContainer {
+.menu,
+.element,
+.logo-container {
   display: inline-block;
 }
-.headerNav {
+.header-nav {
   float: right;
   position: relative;
   margin-top: 44px;
@@ -72,11 +72,11 @@ nav *,
   -webkit-box-shadow: -4px -5px 0px 0px rgba(245,197,6,0.27), -8px -8px 0px 0px rgba(245,197,6,0.27); 
   box-shadow: -4px -5px 0px 0px rgba(245,197,6,0.27), -8px -8px 0px 0px rgba(245,197,6,0.27);
 }
-.headerNav li {
+.header-nav .element {
   background-color: #f5c506;
   background-repeat: no-repeat;
 }
-.headerNav li a {
+.ref {
   font-size: 17px;
   font-family: "SegoeWP", Helvetica, sans-serif;
   font-weight: 600;
@@ -85,29 +85,31 @@ nav *,
   text-decoration: none;
   text-align: center;
 }
-.headerNav li a:hover {
-  text-decoration: underline;
-  color: azure;
+.element:hover {
+  background: #ffeea8;
 }
-.headerNav ul li:nth-child(1){  
+.header-nav .element:nth-child(1){  
   background-image: url(./assets/img/nav1.png);
   background-position: 39px 10px;
   background-size: 21px;
+  background-repeat: no-repeat;
   padding: 11px 20px 11px 70px;
   letter-spacing: 0.4px;
   border-right: 1px solid #dcb105;
 }
-.headerNav ul li:nth-child(2){ 
+.header-nav .element:nth-child(2){ 
   background-image: url(./assets/img/nav2.png);
   background-position: 13px center;
   background-size: 20px;
+  background-repeat: no-repeat;
   padding: 11px 18px 11px 41px;
   border-right: 1px solid #dcb105;
   letter-spacing: 0.2px;
 }
-.headerNav ul li:nth-child(3){ 
+.header-nav .element:nth-child(3){ 
   background-image: url(./assets/img/nav3.png);
   background-position: 17px 10px;
+  background-repeat: no-repeat;
   background-size: 24px;
   padding: 11px 21px 11px 48px;
   letter-spacing: 0.4px;
@@ -119,11 +121,11 @@ nav *,
   background-size: cover;
   background-position: center;
 }
-.logo.header {
+.logo.header-size {
   width: 83px;
   height: 83px;
 }
-h1.logoTheyalow {
+.logo-theyalow {
   color: #ffffff;
   display: inline-block;
   font-family: "LucidaSans", Helvetica, sans-serif;
@@ -151,11 +153,11 @@ h1.logoTheyalow {
   cursor: pointer;
   background-color: #f5c506;
 }
-div.arrow.left {
+.arrow.left {
   background-image: url(./assets/img/leftArrow.png);
   left: 0px;
 }
-div.arrow.right {
+.arrow.right {
   background-image: url(./assets/img/rightArrow.png);
   right: 0px;
 }
@@ -169,7 +171,7 @@ div.arrow.right {
   position: relative;
   width: 1020px;
 }
-.yeallowLayer {
+.yeallow-layer {
   width: 53.6544%;
   height: 85%;
   background-color: rgba(245, 197, 6, 0.11);
@@ -179,7 +181,7 @@ div.arrow.right {
   top: 55px;
   left: 0px;
 }
-.theCool  {
+.the-cool  {
   float: right;
   margin-top: 129px;
   font-size: 63.05px;
@@ -188,72 +190,74 @@ div.arrow.right {
   text-align: center;
   line-height: 1.2;
 } 
-p.yellow {
+.yellow {
   color: #f5c506;
   letter-spacing: 0.9px;
   margin-right: 32px;
 }
-p.white {
+.white {
   color: #ffffff;
   letter-spacing: 0.7px;
   margin-right: 17px;
 }
-.block2 {
+.advantage {
   height: 212px;
   background-image: url("./assets/img/layer1.jpg");
   background-repeat: repeat;
 }
-.iconArea {
+.icon-area {
   width: 1020px;
   display: flex;
   height: 100%;
 }
-.iconArea > div {
+.icon-area .design,
+.icon-area .customize,
+.icon-area .its-free {
   width: 33.33%;
   height: 100%;
   text-align: center;
   border-left: 1px solid #d3d3d3;
 }
-.iconArea >div:nth-child(3){
+.icon-area .its-free {
   border-right: 1px solid #d3d3d3;
 }
-div.designIcon {
+.design-icon {
   background: url(./assets/img/Shape\ 2.svg) no-repeat;
   background-position: center;
   height: 74px;
   margin-top: 61px;
   margin-right: 5px;
 }
-div.customiseIcon {
+.customize-icon {
   background: url(./assets/img/Shape\ 3.svg) no-repeat;
   background-position: center;
   height: 95px;
   margin-top: 37px;
   margin-left: 7%;
 }
-div.itsFreeIcon {
+.its-free-icon {
   background: url(./assets/img/Shape\ 4.svg) no-repeat;
   background-position: center;
   height: 83px;
   margin-top: 55px;
   margin-left: -6%;
 }
-.iconArea p {
+.icon-area {
   font-family: "SegoeWP", Helvetica, sans-serif;
   font-size: 27px;
   text-transform: uppercase;
 }
-.design p {
+.design-text {
   margin-top: 14px;
   margin-left: 18px;
   letter-spacing: -0.3px;
 }
-.customise p {
+.customize-text {
   margin-top: 18px;
   margin-left: 21px;
   letter-spacing: -0.7px;
 }
-.itsFree p {
+.its-free-text {
   margin-top: 12px;
   margin-left: -16px;
   letter-spacing: -0.5px;
@@ -267,7 +271,7 @@ div.itsFreeIcon {
   background-position: center;
   background-size: cover;
 }
-.block3 {
+.widgets-block {
   height: 508px;
   -webkit-box-shadow: inset 0px 7px 10px -10px #000000;
   -ms-box-shadow: inset 0px 7px 10px -10px #000000; 
@@ -276,16 +280,16 @@ div.itsFreeIcon {
   background-repeat: repeat;
   background-size: 53px 42px;
 }
-.textAndVideoLayer {
+.text-and-video-layer {
   position: relative;
   width: 655px;
   height: 233px;
   display: flex;
 }
-.loremSection {
+.lorem-section{
   width: 1020px;
 } 
-h2.loremIpsum {
+.lorem-ipsum{
   color: #fff;
   font-family: "PT Sans", Helvetica, sans-serif;
   font-size: 37px;
@@ -294,7 +298,7 @@ h2.loremIpsum {
   text-transform: uppercase;
   letter-spacing: 0.4px;
 }
-p.blockthree1 {
+.desktop-paragraph {
   color: #fff;
   font-family: "SegoeWP", Helvetica, sans-serif;
   font-weight: lighter;
@@ -305,7 +309,7 @@ p.blockthree1 {
   margin-left: 30px;
   letter-spacing: 0.3px;
 }
-p.blockthree2 {
+.mobile-paragraph {
   display: none;
   width: 240px;
   color: #fff;
@@ -318,11 +322,11 @@ p.blockthree2 {
   margin-left: 27px;
   letter-spacing: 0.3px;
 }
-.loremLayer {
+.lorem-layer {
   background-color: #EC9E03;
   position: relative;
 }
-.playbutton {
+.play-button {
   position: absolute;
   top: 93px;
   left: 470px;
@@ -335,29 +339,29 @@ p.blockthree2 {
   background-size: 17px;
   border-radius: 100%;
 }
-.playbutton:hover {
+.play-button:hover {
   cursor: pointer;
   border: 1px solid #fff;
 }
-div.plus {
+.plus {
   background: url(./assets/img/plus.svg) no-repeat;
   background-position: center;
   height: 12px;
   width: 12px;
   position: absolute;
 }
-.textAndVideoLayer div.plus{
+.text-and-video-layer .plus{
   bottom: 13px;
   right: 14px;
 }
-div.plus:hover {
+.plus:hover {
   cursor: pointer;
 }
-.twitterLayer div.plus {
+.twitter-layer .plus {
   bottom: 13px;
   right: 11px;
 }
-.twitterLayer {
+.twitter-layer {
   background-color: #EC9E03;
   width: 331px;
   position: relative;
@@ -366,7 +370,7 @@ div.plus:hover {
   display: flex;
   justify-content: space-between;
 }
-p.notific {
+.notific {
   color:#fff;
   font-family: "SegoeWP", Helvetica, sans-serif;
   font-weight: 400;
@@ -375,7 +379,7 @@ p.notific {
   top: 15px;
   right: 19px;
 }
-div.twitter {
+.twitter {
   background: url(./assets/img/twitter.svg) no-repeat;
   background-position: center;
   height: 134px;
@@ -390,14 +394,14 @@ div.twitter {
   text-align: center;
   margin-bottom: 43px;
 }
-p.date {
+.date {
   color: #fff;
   font-family: "Segoe UI", Helvetica, sans-serif;
   font-size: 51px;
   line-height: 1.23;
   padding-left: 3px;
 }
-p.month {
+.month {
   font-size: 21px;
   font-family: "SegoeWP", Helvetica, sans-serif;
   color: #b26529;
@@ -415,6 +419,7 @@ input[type=range].custom {
   width: 897px;
   margin: 0px 71px;
   background-color: rgba(255,255,255,0.48);
+  border-radius: 13px;
 }
 input[type=range].custom:focus {
   outline: none;
@@ -423,13 +428,11 @@ input[type=range].custom::-webkit-slider-runnable-track {
   width: 100%;
   height: 16px;
   cursor: pointer;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  background: rgba(255, 255, 255, 0.47);
+  background: rgba(255, 255, 255, 0);
   border-radius: 13.1px;
   border: 0px solid #010100;
 }
 input[type=range].custom::-webkit-slider-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 0px solid #000000;
   height: 16px;
   width: 196px;
@@ -452,7 +455,6 @@ input[type=range].custom::-moz-range-track {
   border: 0px solid #010100;
 }
 input[type=range].custom::-moz-range-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 0px solid #000000;
   height: 16px;
   width: 198px;
@@ -472,16 +474,13 @@ input[type=range].custom::-ms-fill-lower {
   background: rgba(255, 255, 255, 0.47);
   border: 0px solid #010100;
   border-radius: 26.2px;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
 }
 input[type=range].custom::-ms-fill-upper {
   background: rgba(255, 255, 255, 0.47);
   border: 0px solid #010100;
   border-radius: 26.2px;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
 }
 input[type=range].custom::-ms-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 0px solid #000000;
   width: 198px;
   border-radius: 10px;
@@ -495,7 +494,7 @@ input[type=range].custom:focus::-ms-fill-lower {
 input[type=range].custom:focus::-ms-fill-upper {
   background: rgba(255, 255, 255, 0.47);
 }
-.block4 {
+.about-adaptive {
   height: 499px;
   background-image: url(./assets/img/grayLayer.png);
   background-repeat: repeat;
@@ -503,10 +502,10 @@ input[type=range].custom:focus::-ms-fill-upper {
   -webkit-box-shadow: inset 0px -20px 5px -18px #000000; 
   box-shadow: inset 0px -20px 5px -18px #000000;
 }
-.grayLayer {
+.gray-layer {
   width: 1020px;
 }
-.block5 {
+.footer-block {
   height: 64px;
   background-color: #4C4C4C;
 }
@@ -517,15 +516,15 @@ input[type=range].custom:focus::-ms-fill-upper {
   width: 52px;
   height: 52px;
 }
-.footerLogoWraper {
+.footer-logo-wrapper {
   display: flex;
   align-items: center;
 }
-div.logo.footer {
+.logo.footer {
   margin-top: 5px;
   margin-left: 1px;
 }
-p.theyalowFooter {
+.theyalow-footer {
   color: #fff;
   font-family: "LucidaSans", Helvetica, sans-serif;
   font-size: 29px;
@@ -535,28 +534,28 @@ p.theyalowFooter {
   margin-top: 7px;
   margin-left: 8px;
 }
-h2.loremIpsum.yellow {
+.lorem-ipsum.yellow {
   color: #f5c506;
   font-size: 43px;
   padding-top: 42px;
   padding-left: 210px;
   letter-spacing: 0.5px;
 }
-.device-and-list-wraper {
+.device-and-list-wrapper {
   display: inline-block;
 }
-.devices-container div{
+.devices-container .common-property{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.devices-container div.desktop {
+.devices-container .desktop {
   position: relative;
   width: 323px;
   height: 255px;
   background-image: url(./assets/img/computer.png);
 }
-.devices-container div.sale{
+.devices-container .sale{
   width: 116px;
   height: 116px;
   background-color: #f5c506;
@@ -565,14 +564,14 @@ h2.loremIpsum.yellow {
   top: -43px;
   left: -20px;
 }
-.devices-container div.tablet {
+.devices-container .tablet {
   width: 129px;
   height: 173px;
   background-image: url(./assets/img/tablet.png);
   margin-left: 24px;
   margin-top: 1px;
 }
-.devices-container div.mobile {
+.devices-container .mobile {
   width: 39px;
   height: 63px;
   background-image: url(./assets/img/mobile.png);
@@ -585,7 +584,7 @@ h2.loremIpsum.yellow {
   margin-left: 18px;
   align-items: center;
 }
-.sale p {
+.sale-text {
   font-size: 17px;
   font-family: "PT Sans", Helvetica, sans-serif;
   color: #ffffff;
@@ -595,7 +594,7 @@ h2.loremIpsum.yellow {
   margin-left: 7px;
   letter-spacing: -0.7px;
 }
-.undeOmnis li{
+.unde-omnis-element {
   display: inline-block;
   font-size: 22px;
   font-family: "Open Sans", Hekvetica, sans-serif;
@@ -605,7 +604,7 @@ h2.loremIpsum.yellow {
   padding-left: 35px;
   margin-bottom: 23px;
 }
-.undeOmnis li:before {
+.unde-omnis-element:before {
   content: "";
   position: absolute;
   left: 0px;
@@ -615,27 +614,29 @@ h2.loremIpsum.yellow {
   background-color: #f5c506;
   border-radius: 100%;
 }
-div.unordered-list {
+.unordered-list {
   display: inline-block;
   width: 37%;
   padding-left: 76px;
 }
-.undeOmnis li:nth-child(2) {
+.unde-omnis-element:nth-child(2) {
   margin-bottom: 14px;
 }
-.undeOmnis li:nth-child(3) {
+.unde-omnis-element:nth-child(3) {
   margin-bottom: 32px;
 }
-.undeOmnis li:nth-child(4) {
+.unde-omnis-element:nth-child(4) {
   position: relative;
   top: -7px;
 }
-ul.undeOmnis {
+.unde-omnis {
   position: relative;
   top: 10px;
 }
 .video-mobile {
   display: none;
+  width: 100%;
+  height: 100%;
 }
 .twitter-message-area {
   display: none;
@@ -715,54 +716,54 @@ ul.undeOmnis {
   background-size: auto auto;
 }
 @media screen and (max-width: 640px) {
-  div.body-container {
+  .body-container {
     width: 640px;
     margin: 0;
   }
-  .block1 {
+  .block-theyalow {
     height: 390px;
   }
-  header {
+  .header {
     width: 640px;
     height: 62px;
     padding-top: 0;
     margin: 0;
     display: flex;
   }
-  .logoContainer {
+  .logo-container {
     width: 186px;
     display: flex;
     height: 62px;
     background-image: url(./assets/img/mobileLogoBG.png);
   }
-  div.logo.header {
+  .logo.header-size {
     width: 40px;
     height: 40px;
     margin-top: 10px;
     margin-left: 12px;
   }
-  h1.logoTheyalow {
+  .logo-theyalow {
     font-size: 19.29px;
     margin-top: 24px;
     margin-left: 5px;
     letter-spacing: 0.5px;
   }
-  .headerNav {
+  .header-nav {
     margin: 0;
     box-shadow: none;
     width: 454px;
     box-sizing: border-box;
   }
-  .headerNav ul li:nth-child(1) {
+  .header-nav .element:nth-child(1) {
     background-position: 24px 21px;
     background-size: 23px;
-    padding: 23px 21px 20px 58px;
+    padding: 23px 20px 20px 58px;
     letter-spacing: 1px;
     width: 172px;
     height: 62px;
     box-sizing: border-box;
   }
-  .headerNav ul li:nth-child(2) {
+  .header-nav .element:nth-child(2) {
     background-position: 9px center;
     background-size: 21px;
     padding: 23px 13px 20px 37px;
@@ -771,7 +772,7 @@ ul.undeOmnis {
     height: 62px;
     box-sizing: border-box;
   }
-  .headerNav ul li:nth-child(3) {
+  .header-nav .element:nth-child(3) {
     background-position: 12px 20px;
     background-size: 28px;
     padding: 23px 11px 20px 52px;
@@ -780,7 +781,7 @@ ul.undeOmnis {
     height: 62px;
     box-sizing: border-box;
   }
-  .headerNav li a {
+  .header-nav .ref {
     font-size: 18px;
   }
   .arrow {
@@ -792,7 +793,7 @@ ul.undeOmnis {
     height: 327px;
     margin: 0;
   }
-  .yeallowLayer {
+  .yeallow-layer {
     width: 640px;
     height: 327px;
     background-color: rgba(245, 197, 6, 0.11);
@@ -802,117 +803,119 @@ ul.undeOmnis {
     top: 0;
     margin-left: 0;
   }
-  .theCool {
+  .the-cool {
     display: none;
   }
-  .block2 {
+  .advantage {
     height: 170px;
   }
-  .iconArea,
-  .grayLayer {
+  .icon-area,
+  .gray-layer {
     width: 640px;
     margin: 0;
   }
-  .iconArea {
+  .icon-area {
     position: relative;
     z-index: 3;
   }
-  .iconArea > div {
+  .icon-area .design,
+  .icon-area .customize,
+  .icon-area .its-free {
     border: 0;
   }
-  div.designIcon {
+  .design-icon {
     background-position: 45px;
     background-size: 90px 62px;
     height: 62px;
     margin-top: 31px;
   }
-  div.customiseIcon {
+  .customize-icon {
     background-size: 68px 70px;
     margin-top: 15px;
     margin-left: 16px;
   }
-  div.itsFreeIcon {
+  .its-free-icon {
     background-position: 83px;
     background-size: 69px 70px;
     margin-top: 21px;
   }
-  .iconArea p {
+  .icon-area {
     font-size: 23px;
   }
-  .design p {
+  .design .design-text {
     margin-top: 21px;
     margin-right: 23px;
     margin-left: 0;
     letter-spacing: 0;
   }
-  .customise p {
+  .customize .customize-text {
     margin-top: 4px;
     margin-left: 19px;
   }
-  .itsFree p {
+  .its-free .its-free-text {
     margin-top: 10px;
     margin-left: 5px;
     letter-spacing: -0.4px;
   }
-  .loremSection {
+  .lorem-section{
     width: 640px;
   }
-  .block3 {
+  .widgets-block {
     height: 485px;
     background-color: #fff;
     background-image: none;
     box-shadow: none;
   }
-  h2.loremIpsum,
+  .lorem-ipsum,
   .calendar,
-  input.custom {
+  .custom {
     display:none;
   }
-  .loremLayer {
+  .lorem-layer {
     width: 299px;
     height: 232px;
     margin: 10px 8px 9px 9px;
   }
-  .loremVideo {
+  .lorem-video {
     margin: 9px 8px 9px 1px;
   }
-  p.blockthree1 {
+  .desktop-paragraph {
     display: none;
   }
-  p.blockthree2 {
+  .mobile-paragraph {
     display: block;
   }
-  .textAndVideoLayer {
+  .text-and-video-layer {
     width: 640px;
     height: 251px;
   }
-  .textAndVideoLayer div.plus {
+  .text-and-video-layer div.plus {
     bottom: 17px;
     right: 11px;
   }
-  .playbutton {
+  .play-button {
     top: 102px;
     left: 447px;
   }
-  div.unordered-list {
+  .unordered-list {
     display: none;
   }
   .wrap {
     display: inline-block;
     height: 485px;
   }
-  .twitterLayer div.plus,
-  p.notific {
+  .twitter-layer .plus,
+  .notific {
     display: none;
   }
-  .twitterLayer {
+  .twitter-layer {
     display: flex;
     background-color: #F5C507;
     width: 640px;
     height: 234px;
     box-sizing: border-box;
   }
-  div.twitter {
+  .twitter {
     background-position: 85px 59px;
     background-size: 160px 133px;
     height: 118px;
@@ -924,10 +927,10 @@ ul.undeOmnis {
     width: 323px;
     height: 233px;
   }
-  .block4 {
+  .about-adaptive {
     height: 465px;
   }
-  h2.loremIpsum.yellow {
+  .loremIpsum.yellow {
     font-family: "Open Sans", Helvetica, sans-serif;
     display: block;
     padding-top: 36px;
@@ -943,7 +946,7 @@ ul.undeOmnis {
     top: -41px;
     left: -30px;
   }
-  .block5 {
+  .footer-block {
     height: 43px;
   }
   .footer {
@@ -953,11 +956,11 @@ ul.undeOmnis {
     width: 30px;
     height: 30px;
   }
-  div.logo.footer {
+  .logo.footer {
     margin-top: 6px;
     margin-left: 65.5px;
   }
-  p.theyalowFooter {
+  .theyalow-footer {
     font-size: 17px;
     margin-top: 7px;
     margin-left: 8px;
